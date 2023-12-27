@@ -1,17 +1,17 @@
 
 public class InOrder {
 	public static void main (String[] args) {
-		int i =0;
-		int j = 0;
+		int i =(int) (10.0*Math.random()) ;
+		int j = -1;
+		int mid = i;
+		System.out.print(i);
 		while(i>j){
-		do {
-		 i = (int)Math.random() * 10;
-		 j =(int)Math.random() * 10;
-		System.out.println(i + j);
-		}
-	}
-        
-		
+		i = (int) (10.0*Math.random());
+		j = mid;
+	    System.out.print(i);
+	    
+	 }	
+
        
 	}
 }
