@@ -9,11 +9,8 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		// Gets the two command-line arguments
 		int t = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
-		// Initailizes a random numbers generator with the given seed value
-         
 		int boys = 0;
 	    int girl = 0;
 	    int kid2 = 0;
@@ -22,8 +19,9 @@ public class OneOfEachStats {
 	    int sum = 0;
 	    for(int i = 0; i<t; i++){
         while (boys == 0 || girl == 0){
-		Random num = new Random(seed);
-		if (num <= 0.5){
+		 Random generator = new Random(seed); 
+		 double rnd = generator.nextDouble();
+		if (rnd <= 0.5){
         boys ++;
 		}
 		else {
