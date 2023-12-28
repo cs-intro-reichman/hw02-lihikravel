@@ -33,13 +33,22 @@ public class OneOfEachStats1 {
 	   boys = 0;
 	   girl = 0;
    }
-	   double avr = (2*kid2 + 3*kid3 + 4*kid4)/t;
+       double ageSum = kid2*2 + kid3*3 + kid4*4;
+	   double avr = ageSum/t;
 
 	   System.out.println("Average: " + avr + " children to get at least one of each gender." );
 	   System.out.println("Number of families with 2 children: " + kid2 );
 	   System.out.println("Number of families with 3 children: " + kid3 );
 	   System.out.println("Number of families with 4 or more children: " + kid4 );	
-	   
+
+	   if (kid2 > kid3 && kid2 > kid4) {
+       System.out.println("The most common number of children is " + 2 + "." );
+
+	   }else if (kid3 > kid2 && kid3 > kid4) {
+	   System.out.println("The most common number of children is " + 3 + "." );
+
+	}else 
+	 System.out.println("The most common number of children is 4 or more.");
    }
 }
 
