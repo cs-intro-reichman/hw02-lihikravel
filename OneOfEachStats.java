@@ -11,8 +11,8 @@ public class OneOfEachStats {
 	    int sum = 0;
 	    for(int i = 0; i<t; i++){
         while (boys == 0 || girl == 0){
-		 Random generator = new Random(seed); 
-		 double rnd = generator.nextDouble();
+		Random generator = new Random(seed); 
+		double rnd = generator.nextDouble();
 		if (rnd <= 0.5){
         boys ++;
 		}
@@ -49,8 +49,8 @@ public class OneOfEachStats {
 	   }else if (kid3 > kid2 && kid3 > kid4) {
 	   System.out.println("The most common number of children is " + 3 + "." );
 
-	}else 
-	 System.out.println("The most common number of children is 4 or more.");
+	   }else 
+	   System.out.println("The most common number of children is 4 or more.");
 	
 		    
 	}
