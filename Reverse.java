@@ -6,7 +6,8 @@ public class Reverse {
 		String sOut= "";
 		for (i = s.length()-1; i>=0; i--){
 		    char c = s.charAt(i);
-		    sOut =  sOut + c;
+			// #feedback: x += n equivalent to x = x + n
+		    sOut += c;
      }
 		 System.out.println(sOut);
 		 for (i = 0; i < s.length();i++){
